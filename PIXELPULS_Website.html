@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PIXELPULS entwickelt moderne Websites und digitale Lösungen, die Unternehmen professionell präsentieren und Abläufe vereinfachen.">
+<meta name="theme-color" content="#090b12">
+<title>PIXELPULS — Digital, das weiterbringt.</title>
+<style>
+:root{--bg:#090b12;--panel:#111521;--text:#f4f6fb;--muted:#a3adc0;--line:rgba(255,255,255,.11);--blue:#6c7cff;--cyan:#62e6d5;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:11px;align-items:center;font-weight:850;letter-spacing:.14em;font-size:17px}.mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#080b12;font-weight:900;letter-spacing:0}.navlinks{display:flex;gap:28px;color:#c1c8d7;font-size:14px}.navlinks a:hover{color:white}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:750;font-size:14px;transition:.2s;border:1px solid transparent}.navcta,.btn.primary{background:linear-gradient(110deg,var(--blue),#8791ff);color:white;box-shadow:0 8px 32px #5968ff2b}.navcta:hover,.btn:hover{transform:translateY(-2px)}.btn.secondary{border-color:var(--line);background:#ffffff06}.hero{padding:94px 0 74px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,#5669ff26,transparent 68%);right:-180px;top:-190px;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:54px;align-items:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:#ffffff05;color:#c8d0e2;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:750;letter-spacing:.09em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 14px var(--cyan)}h1{font-size:clamp(44px,6vw,76px);line-height:1.03;letter-spacing:-.065em;margin:23px 0 22px;max-width:720px}h1 span{background:linear-gradient(100deg,#a9b2ff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;line-height:1.7;color:var(--muted);max-width:590px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.microproof{display:flex;align-items:center;gap:12px;color:#aeb8ca;font-size:12px;margin-top:22px}.avatars{display:flex}.avatars i{font-style:normal;width:27px;height:27px;margin-left:-5px;border:2px solid var(--bg);border-radius:50%;display:grid;place-items:center;background:#222c42;font-size:10px}.avatars i:first-child{margin-left:0}
+.dashboard{border:1px solid #ffffff1a;background:linear-gradient(145deg,#171c2b,#0e121c);border-radius:24px;padding:17px;box-shadow:0 30px 100px #0008;transform:perspective(1200px) rotateY(-5deg) rotateX(2deg)}.dash-top{display:flex;justify-content:space-between;align-items:center;padding:5px 5px 17px;border-bottom:1px solid var(--line);font-size:12px;color:#b4bed0}.dash-dots{display:flex;gap:5px}.dash-dots i{width:7px;height:7px;background:#46506a;border-radius:50%}.dash-content{padding:21px 5px 6px}.dash-label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#8e9ab3}.dash-title{font-size:24px;font-weight:800;letter-spacing:-.04em;margin:4px 0 15px}.metric-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}.metric{background:#ffffff07;border:1px solid var(--line);padding:14px;border-radius:14px}.metric small{color:#9ba7bc;font-size:11px}.metric strong{display:block;font-size:25px;margin:3px 0;letter-spacing:-.04em}.up{font-size:11px;color:var(--cyan)}.chart{height:112px;margin-top:13px;background:#ffffff04;border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;align-items:end;gap:7px}.bar{flex:1;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,var(--cyan),#6879ff);opacity:.9;animation:rise .9s ease both;transform-origin:bottom}.bar:nth-child(1){height:28%}.bar:nth-child(2){height:44%;animation-delay:.06s}.bar:nth-child(3){height:36%;animation-delay:.12s}.bar:nth-child(4){height:59%;animation-delay:.18s}.bar:nth-child(5){height:51%;animation-delay:.24s}.bar:nth-child(6){height:76%;animation-delay:.3s}.bar:nth-child(7){height:67%;animation-delay:.36s}.bar:nth-child(8){height:91%;animation-delay:.42s}.floating{display:flex;gap:11px;align-items:center;background:#151b29;border:1px solid #ffffff1c;padding:12px 15px;border-radius:15px;position:absolute;bottom:18px;left:-25px;box-shadow:0 15px 40px #0007;font-size:12px}.float-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#62e6d51a;color:var(--cyan);font-size:18px}.floating b{display:block;font-size:13px}.floating span{color:#a3adc0}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0}.trust-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.trust-label{font-size:12px;color:#818ca2;text-transform:uppercase;letter-spacing:.13em}.trust-tag{color:#a8b1c3;font-size:14px;font-weight:700}
+section{padding:90px 0}.section-head{max-width:700px;margin-bottom:36px}.kicker{color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-.05em;margin:12px 0}.section-head p{color:var(--muted);font-size:16px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#141927,#0e121b);border:1px solid var(--line);border-radius:19px;padding:25px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#6c7cff70}.icon{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:#7180ff19;color:#aeb6ff;font-size:21px;margin-bottom:20px}.card h3{margin:0 0 9px;font-size:19px}.card p{color:var(--muted);font-size:14px;margin:0 0 18px}.card ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;color:#c7cede;font-size:13px}.card li:before{content:"✓";color:var(--cyan);margin-right:9px}
+.process{background:#0d1019;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:1px solid #414a62;padding-top:18px}.step-num{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.12em}.step h3{font-size:17px;margin:10px 0 7px}.step p{font-size:13px;color:var(--muted);margin:0}.feature{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.feature-visual{min-height:340px;border-radius:24px;border:1px solid var(--line);background:radial-gradient(ellipse at 60% 20%,#6d7cff2a,transparent 50%),linear-gradient(145deg,#151b2b,#0c1019);display:grid;place-items:center;padding:30px}.orbit{width:240px;height:240px;border:1px solid #7786ff62;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #7786ff42;border-radius:50%;inset:25px}.orbit:after{inset:55px}.core{width:82px;height:82px;border-radius:23px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#080b12;font-weight:950;font-size:24px;box-shadow:0 0 65px #7483ff45;z-index:1}.feature h2{font-size:clamp(32px,4vw,46px);line-height:1.1;letter-spacing:-.05em;margin:12px 0}.feature p{color:var(--muted)}.checklist{display:grid;gap:12px;margin:24px 0}.check{display:flex;gap:11px;color:#d4d9e5;font-size:14px}.check span{color:var(--cyan);font-weight:900}
+.cta-band{padding:0 0 90px}.cta-box{border:1px solid #7d89ff45;border-radius:24px;padding:44px;background:radial-gradient(ellipse at 90% 0%,#6878ff25,transparent 50%),linear-gradient(120deg,#151b2b,#101520);display:flex;align-items:center;justify-content:space-between;gap:30px}.cta-box h2{font-size:clamp(28px,3.5vw,42px);line-height:1.1;letter-spacing:-.045em;margin:0 0 10px}.cta-box p{color:var(--muted);margin:0;max-width:600px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}.contact-info h2{font-size:42px;line-height:1.1;letter-spacing:-.05em;margin:12px 0}.contact-info p{color:var(--muted)}.contact-note{margin-top:25px;padding:16px;border:1px solid var(--line);border-radius:14px;color:#b4bed0;font-size:13px}.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:#c2cada;font-weight:700}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);background:#101521;color:white;border-radius:11px;padding:13px 14px;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:#7b88ff}.field textarea{min-height:120px;resize:vertical}.field select option{background:#101521}.form .btn{cursor:pointer}.form-hint{grid-column:1/-1;color:#8490a5;font-size:11px;margin:0}
+footer{border-top:1px solid var(--line);padding:27px 0;color:#8792a7;font-size:12px}.foot{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}.foot strong{color:#dce2f0;letter-spacing:.12em}.foot-links{display:flex;gap:18px}
+
+/* Cursor glow and refined motion */
+body{cursor:default}
+.cursor-glow{position:fixed;left:0;top:0;width:360px;height:360px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(104,124,255,.15) 0%,rgba(98,230,213,.07) 28%,transparent 68%);transform:translate(-50%,-50%);mix-blend-mode:screen;opacity:0;transition:opacity .25s ease}
+body.cursor-active .cursor-glow{opacity:1}
+header,main,footer{position:relative;z-index:1}
+.card,.dashboard,.cta-box,.feature-visual{transform-style:preserve-3d}
+.card{position:relative;overflow:hidden}
+.card:after{content:"";position:absolute;inset:0;opacity:0;pointer-events:none;background:radial-gradient(280px circle at var(--mx,50%) var(--my,50%),rgba(108,124,255,.12),transparent 55%);transition:opacity .25s}
+.card:hover:after{opacity:1}
+.btn{position:relative;overflow:hidden}
+.btn:after{content:"";position:absolute;top:-70%;left:-45%;width:35%;height:240%;transform:rotate(25deg);background:linear-gradient(90deg,transparent,#ffffff32,transparent);transition:left .55s}
+.btn:hover:after{left:125%}
+.pricing-cards{align-items:stretch}
+.price-card{display:flex;flex-direction:column}
+.price-tag{font-size:11px;letter-spacing:.15em;color:var(--cyan);font-weight:850;margin-bottom:12px}
+.price{font-size:39px;letter-spacing:-.06em;font-weight:900;margin-top:12px}
+.price-caption{font-size:11px;color:#8793a8;margin-bottom:20px}
+.price-btn{margin-top:24px;width:100%}
+.price-card ul{margin-top:4px}
+.price-card.featured{border-color:#7786ff9c;box-shadow:0 18px 65px #5566ff15;position:relative}
+.popular{position:absolute;top:17px;right:16px;background:#6c7cff24;color:#c3caff;padding:5px 8px;border-radius:999px;font-size:9px;font-weight:850;letter-spacing:.08em}
+.pricing-note{font-size:12px;color:#8f9ab0;margin:18px 0 0;max-width:850px}
+@media(pointer:coarse){.cursor-glow{display:none}}
+
+@keyframes rise{from{transform:scaleY(.2);opacity:.2}to{transform:scaleY(1);opacity:.9}}
+@media(max-width:850px){.hero-grid,.feature,.contact-grid{grid-template-columns:1fr}.hero{padding-top:65px}.dashboard{max-width:600px;margin:10px auto 0;transform:none}.floating{left:8px;bottom:-18px}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.cta-box{align-items:flex-start;flex-direction:column}.navlinks{display:none}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}nav{height:70px}.navcta{padding:10px 12px;font-size:12px}.hero{padding:55px 0 60px}h1{font-size:47px}.hero p{font-size:16px}.cards,.steps{grid-template-columns:1fr}section{padding:66px 0}.cta-box{padding:28px}.form{grid-template-columns:1fr}.field.full,.form-hint{grid-column:auto}.feature-visual{min-height:280px}.orbit{transform:scale(.85)}.trust-inner{justify-content:center}.trust-label{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="cursor-glow" aria-hidden="true"></div>
+<header class="wrap">
+<nav aria-label="Hauptnavigation">
+<a class="brand" href="#start" aria-label="PIXELPULS Startseite"><span class="mark">N</span>PIXELPULS</a>
+<div class="navlinks"><a href="#leistungen">Leistungen</a><a href="#preise">Preise</a><a href="#ablauf">Ablauf</a><a href="#warum">Warum PIXELPULS</a></div>
+<a class="navcta" href="#kontakt">Projekt besprechen <span>↗</span></a>
+</nav>
+</header>
+<main>
+<section class="hero" id="start">
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow"><span class="dot"></span> Websites & digitale Lösungen</div>
+<h1>Dein Auftritt.<br><span>Der nächste Wow-Moment.</span></h1>
+<p>Wir bauen moderne Websites und digitale Lösungen, die auffallen, Vertrauen schaffen und aus Besuchern echte Anfragen machen.</p>
+<div class="actions"><a class="btn primary" href="#kontakt">Projekt starten <span>↗</span></a><a class="btn secondary" href="#leistungen">Leistungen entdecken <span>↓</span></a></div>
+<div class="microproof"><div class="avatars"><i>W</i><i>D</i><i>+</i></div><span>Persönlich. Verständlich. Auf dein Ziel ausgerichtet.</span></div>
+</div>
+<div style="position:relative">
+<div class="dashboard">
+<div class="dash-top"><span>◈ &nbsp; PIXELPULS / DIGITAL WORKSPACE</span><span class="dash-dots"><i></i><i></i><i></i></span></div>
+<div class="dash-content">
+<div class="dash-label">Deine digitale Präsenz</div><div class="dash-title">Ein starker erster Eindruck.</div>
+<div class="metric-row"><div class="metric"><small>Design</small><strong>01</strong><span class="up">Klar & modern</span></div><div class="metric"><small>Strategie</small><strong>02</strong><span class="up">Auf Ziele fokussiert</span></div></div>
+<div class="chart" aria-label="Dekorative Visualisierung"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
+</div></div>
+<div class="floating"><div class="float-icon">✦</div><div><b>Idee wird Lösung</b><span>Schritt für Schritt, gemeinsam.</span></div></div>
+</div>
+</div>
+</section>
+<div class="trust"><div class="wrap trust-inner"><span class="trust-label">Digital gedacht für den Alltag</span><span class="trust-tag">✳ Websites</span><span class="trust-tag">⌘ Individuelle Tools</span><span class="trust-tag">↗ Automatisierung</span><span class="trust-tag">◎ Klarer Prozess</span></div></div>
+<section id="leistungen">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Was wir machen</span><h2>Digital soll nicht kompliziert sein.<br>Es soll etwas bewegen.</h2><p>Die richtigen digitalen Werkzeuge helfen dir, professionell aufzutreten, Zeit zu sparen und dein Unternehmen weiterzuentwickeln.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">▧</div><h3>Websites, die überzeugen</h3><p>Ein professioneller Online-Auftritt, der verständlich zeigt, was du anbietest und wie Kunden dich erreichen.</p><ul><li>Modernes, responsives Design</li><li>Klare Inhalte und Kontaktwege</li><li>Für Smartphone und Desktop</li></ul></article>
+<article class="card"><div class="icon">⌘</div><h3>Digitale Tools</h3><p>Individuelle kleine Anwendungen, die Abläufe übersichtlicher machen und wiederkehrende Aufgaben vereinfachen.</p><ul><li>Formulare und Dashboards</li><li>Einfache interne Werkzeuge</li><li>Passend zum konkreten Bedarf</li></ul></article>
+<article class="card"><div class="icon">↗</div><h3>Smarte Automatisierung</h3><p>Weniger unnötige Handarbeit: Wir prüfen, welche wiederkehrenden Schritte digital unterstützt werden können.</p><ul><li>Anfragen besser organisieren</li><li>Wiederholungen reduzieren</li><li>Workflows durchdenken</li></ul></article>
+</div>
+</div>
+</section>
+
+<section id="preise">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Faire Einstiegspreise</span><h2>Professionell starten.<br>Ohne Riesenbudget.</h2><p>Ungefähre Einstiegspreise für kleine Projekte. Nach einem kurzen Gespräch bekommst du ein konkretes Angebot — ohne versteckte Überraschungen.</p></div>
+<div class="cards pricing-cards">
+<article class="card price-card"><div class="price-tag">START</div><h3>Onepager</h3><p>Für Selbstständige und kleine Betriebe, die online professionell auftreten möchten.</p><div class="price">ab 149 €</div><div class="price-caption">einmalig · je nach Umfang</div><ul><li>Eine moderne Seite</li><li>Für Smartphone optimiert</li><li>Kontaktmöglichkeit</li><li>Eine Korrekturrunde</li></ul><a class="btn secondary price-btn" href="#kontakt" data-service="Website">Onepager anfragen ↗</a></article>
+<article class="card price-card featured"><div class="popular">GUTER EINSTIEG</div><div class="price-tag">BUSINESS</div><h3>Business-Website</h3><p>Für Unternehmen, die Leistungen und Kontakt klar präsentieren wollen.</p><div class="price">ab 299 €</div><div class="price-caption">einmalig · je nach Umfang</div><ul><li>Bis zu 4 Inhaltsbereiche/Seiten nach Absprache</li><li>Individuelles Design</li><li>Mobile Darstellung</li><li>Zwei Korrekturrunden</li></ul><a class="btn primary price-btn" href="#kontakt" data-service="Website">Website anfragen ↗</a></article>
+<article class="card price-card"><div class="price-tag">DIGITAL</div><h3>Kleine Web-Tools</h3><p>Für einfache Rechner, Formulare oder kleine digitale Helfer.</p><div class="price">ab 99 €</div><div class="price-caption">kleine, klar abgegrenzte Funktion</div><ul><li>Kurzes Anforderungsgespräch</li><li>Einfache Benutzeroberfläche</li><li>Test der Kernfunktion</li><li>Preis nach genauer Aufgabe</li></ul><a class="btn secondary price-btn" href="#kontakt" data-service="Digitale Tools / Software">Idee besprechen ↗</a></article>
+</div>
+<p class="pricing-note">Die Preise sind unverbindliche Beispiel-Startpreise für einfache Projekte, keine Pauschalgarantie. Hosting, Domain, zusätzliche Funktionen, Texte, Bilder und laufende Betreuung können extra kosten. Vor jedem Auftrag wird der Umfang schriftlich vereinbart.</p>
+</div>
+</section>
+
+<section class="process" id="ablauf">
+<div class="wrap"><div class="section-head"><span class="kicker">Einfacher Ablauf</span><h2>Von „Wir bräuchten da was“<br>zu einem konkreten Plan.</h2><p>Keine komplizierten Fachgespräche nötig. Wir klären zuerst, was du wirklich brauchst.</p></div>
+<div class="steps">
+<div class="step"><span class="step-num">01 / VERSTEHEN</span><h3>Wir hören zu</h3><p>Was soll besser werden? Wir sprechen über dein Ziel, deine Kunden und deine Anforderungen.</p></div>
+<div class="step"><span class="step-num">02 / PLANEN</span><h3>Wir machen es konkret</h3><p>Du erhältst einen verständlichen Vorschlag zu Umfang, Ablauf und Kosten — bevor etwas umgesetzt wird.</p></div>
+<div class="step"><span class="step-num">03 / UMSETZEN</span><h3>Wir bauen die Lösung</h3><p>Wir entwickeln Schritt für Schritt und halten dich über den Fortschritt auf dem Laufenden.</p></div>
+<div class="step"><span class="step-num">04 / VERBESSERN</span><h3>Wir prüfen gemeinsam</h3><p>Vor dem Abschluss testen wir die wichtigsten Funktionen und klären offene Punkte.</p></div>
+</div></div>
+</section>
+<section id="warum">
+<div class="wrap feature">
+<div class="feature-visual"><div class="orbit"><div class="core">NX</div></div></div>
+<div><span class="kicker">Warum PIXELPULS</span><h2>Gute Technik beginnt mit einem klaren Ziel.</h2><p>Du brauchst kein riesiges Budget für einen professionellen Start. Wir planen eine Lösung, die zu deinem Vorhaben und deinem Budget passt.</p><div class="checklist"><div class="check"><span>✓</span><div><b>Direkte Kommunikation</b><br><small>Du weißt, was als Nächstes passiert.</small></div></div><div class="check"><span>✓</span><div><b>Passender Umfang</b><br><small>Wir planen nach Bedarf statt nach Buzzwords.</small></div></div><div class="check"><span>✓</span><div><b>Mobil mitgedacht</b><br><small>Die Nutzung auf kleinen Bildschirmen zählt von Anfang an.</small></div></div></div><a class="btn secondary" href="#kontakt">Unverbindlich anfragen ↗</a></div>
+</div>
+</section>
+<div class="cta-band"><div class="wrap"><div class="cta-box"><div><h2>Du hast eine Idee?<br>Lass uns sie konkret machen.</h2><p>Erzähl kurz, was du vorhast. Der erste Schritt ist ein unverbindliches Gespräch — ohne Verpflichtung.</p></div><a class="btn primary" href="#kontakt">Jetzt Kontakt aufnehmen ↗</a></div></div></div>
+<section id="kontakt">
+<div class="wrap contact-grid">
+<div class="contact-info"><span class="kicker">Kontakt</span><h2>Was möchtest du verbessern?</h2><p>Beschreibe kurz dein Vorhaben. Wir können gemeinsam prüfen, welcher nächste Schritt sinnvoll ist.</p><div class="contact-note"><b>Gut zu wissen</b><br>Das Formular öffnet dein E-Mail-Programm mit einer vorbereiteten Anfrage. Es werden keine Daten über diese Website gespeichert.</div></div>
+<form class="form" id="contactForm">
+<div class="field"><label for="name">Dein Name</label><input id="name" name="name" placeholder="Max Mustermann" required></div>
+<div class="field"><label for="company">Unternehmen (optional)</label><input id="company" name="company" placeholder="Musterbetrieb"></div>
+<div class="field full"><label for="email">Deine E-Mail-Adresse</label><input id="email" name="email" type="email" placeholder="name@unternehmen.de" required></div>
+<div class="field full"><label for="service">Wobei können wir helfen?</label><select id="service" name="service"><option>Website</option><option>Digitale Tools / Software</option><option>Automatisierung</option><option>Ich bin noch nicht sicher</option></select></div>
+<div class="field full"><label for="message">Deine Idee</label><textarea id="message" name="message" placeholder="Was möchtest du umsetzen oder verbessern?" required></textarea></div>
+<button class="btn primary field full" type="submit">Anfrage vorbereiten ↗</button>
+<p class="form-hint">Hinweis: Vor dem Livegang bitte die Kontaktadresse und rechtlichen Angaben ergänzen.</p>
+</form>
+</div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>PIXELPULS</strong> &nbsp; Digitale Ideen. Sichtbare Wirkung.</div><div class="foot-links"><a href="#leistungen">Leistungen</a><a href="#kontakt">Kontakt</a><a href="#impressum" id="impressumLink">Impressum</a><a href="#datenschutz" id="datenschutzLink">Datenschutz</a></div><span>© <span id="year"></span> PIXELPULS</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const glow = document.querySelector('.cursor-glow');
+if (glow && window.matchMedia('(pointer:fine)').matches) {
+  window.addEventListener('pointermove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+    document.body.classList.add('cursor-active');
+  }, {passive:true});
+  document.addEventListener('pointerleave', () => document.body.classList.remove('cursor-active'));
+}
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('pointermove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', (e.clientX-r.left)+'px');
+    card.style.setProperty('--my', (e.clientY-r.top)+'px');
+  }, {passive:true});
+});
+document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => {
+  const select = document.getElementById('service');
+  if (select) select.value = link.dataset.service;
+}));
+
+document.getElementById('contactForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const d = new FormData(this);
+ const to = 'KONTAKT-EMAIL-HIER-EINTRAGEN';
+ if(to === 'KONTAKT-EMAIL-HIER-EINTRAGEN'){
+   alert('Bitte trage vor der Veröffentlichung deine Geschäfts-E-Mail-Adresse im HTML-Code ein.');
+   return;
+ }
+ const subject = encodeURIComponent('Projektanfrage – ' + d.get('service'));
+ const body = encodeURIComponent('Name: '+d.get('name')+'\nUnternehmen: '+(d.get('company')||'—')+'\nE-Mail: '+d.get('email')+'\nLeistung: '+d.get('service')+'\n\nProjektbeschreibung:\n'+d.get('message'));
+ window.location.href = 'mailto:'+to+'?subject='+subject+'&body='+body;
+});
+document.getElementById('impressumLink').addEventListener('click', e=>{e.preventDefault();alert('Vor Veröffentlichung bitte eine vollständige Impressumsseite mit den gesetzlich erforderlichen Angaben ergänzen.');});
+document.getElementById('datenschutzLink').addEventListener('click', e=>{e.preventDefault();alert('Vor Veröffentlichung bitte eine Datenschutzerklärung ergänzen, die Hosting, eingebundene Dienste und tatsächliche Datenverarbeitung abdeckt.');});
+</script>
+</body>
+</html>
